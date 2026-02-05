@@ -149,32 +149,34 @@
 
             <section>
                 <form action="https://formspree.io/f/mqedzqdq" method="POST">
+
   <div class="fields">
-
     <div class="field">
-      <label for="name">Emri</label>
-      <input type="text" name="name" id="name" placeholder="Vendos emrin" required />
+      <label for="name">Name</label>
+      <input type="text" name="name" required>
     </div>
 
     <div class="field">
-      <label for="email">Emaili</label>
-      <input type="email" name="_replyto" id="email" placeholder="emailiyt@email.com" required />
+      <label for="email">Email</label>
+      <input type="email" name="_replyto" required>
     </div>
 
     <div class="field">
-      <label for="message">Mesazhi</label>
-      <textarea name="message" id="message" rows="4" placeholder="Si mund të ndihmoj?" required></textarea>
+      <label for="message">Message</label>
+      <textarea name="message" rows="4" required></textarea>
     </div>
-
   </div>
-					
-<input type="hidden" name="_redirect" value="thank-you.html">
-  <!-- Honeypot anti-spam -->
+
+  <!-- redirect duhet të jetë KËTU -->
+  <input type="hidden" name="_redirect" value="https://infracoretech.github.io/thank-you.html">
+
+  <!-- anti spam -->
   <input type="text" name="_gotcha" style="display:none">
 
   <ul class="actions">
-    <li><input type="submit" value="Dërgo" /></li>
+    <li><input type="submit" value="Send Message"></li>
   </ul>
+
 </form>
             </section>
 
@@ -220,6 +222,7 @@
 
 </body>
 </html>
+
 
 
 
