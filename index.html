@@ -6,6 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Key Skills - Dark Purple #4932ad */
+        .wrapper.style-keyskills {
+            background-color: #4932ad !important;
+        }
+        .wrapper.style-keyskills .inner,
+        .wrapper.style-keyskills h2,
+        .wrapper.style-keyskills p,
+        .wrapper.style-keyskills .features section h3,
+        .wrapper.style-keyskills .features section p {
+            color: #ffffff;
+        }
+
+        /* Contact Me - Dark Muted Purple #473e5c */
+        .wrapper.style-contact {
+            background-color: #473e5c !important;
+        }
+        .wrapper.style-contact .inner,
+        .wrapper.style-contact h2,
+        .wrapper.style-contact p,
+        .wrapper.style-contact .contact a {
+            color: #ffffff;
+        }
+
+        /* Contact info aligned to side */
+        .contact-side {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-left: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .split-contact {
+                flex-direction: column !important;
+            }
+            .contact-side {
+                margin-left: 0;
+                flex-direction: row;
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -15,10 +58,10 @@
     <div class="inner">
         <nav>
             <ul>
-                <li><a href="#intro">Kreu</a></li>
-                <li><a href="#one">Rreth Meje</a></li>
-                <li><a href="#two">Aftësi & Certifikata</a></li>
-                <li><a href="#three">Kontakt</a></li>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#one">About Me</a></li>
+                <li><a href="#skills">Skills & Certificates</a></li>
+                <li><a href="#three">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -32,137 +75,183 @@
     <div class="inner">
         <h1>Florian Zela</h1>
         <p>
-        IT Specialist me mbi 15 vite përvojë në suport teknik dhe 4 vite eksperiencë profesionale në kompani të mesme.
-        I certifikuar CCNA me eksperiencë në rrjetëzim, administrim sistemi, virtualizim dhe siguri rrjeti.
+        IT Specialist with over 15 years of experience providing technical support to individual users and 4 years in medium-sized companies.
+        CCNA certified with deep knowledge in networking, system administration, virtualization, and network security.
         </p>
         <ul class="actions">
-            <li><a href="#one" class="button scrolly">Shiko më shumë</a></li>
+            <li><a href="#one" class="button scrolly">Learn More</a></li>
         </ul>
     </div>
 </section>
 
 <!-- About -->
 <section id="one" class="wrapper style2 spotlights">
-
     <section>
         <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
         <div class="content">
             <div class="inner">
-                <h2>Përmbledhje Profesionale</h2>
+                <h2>Professional Summary</h2>
                 <p>
-                Eksperiencë në konfigurim rrjeti me MikroTik, Proxmox, Pi-hole dhe implementim politikash me Active Directory & GPO.
-                Eksperiencë për ndihmë në distancë dhe instalim dhe klonim masiv sistemesh.
+                Expert in network configuration with MikroTik, Proxmox, Pi-hole, and Active Directory & GPO implementation.
+                Experience in remote management using MeshCentral and mass deployment with FOG Project.
                 </p>
             </div>
         </div>
     </section>
 
+    <section>
+        <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+        <div class="content">
+            <div class="inner">
+                <h2>Professional Experience</h2>
+                <p>
+                Network administration with MikroTik RouterOS, virtualization with Proxmox, system deployment with FOG Project,
+                GPO implementation and DNS filtering with Pi-hole. Remote client management via MeshCentral.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+        <div class="content">
+            <div class="inner">
+                <h2>Freelance IT Support</h2>
+                <p>
+                Technical support for hardware, operating systems, and local networks. Printer setup, backups, system optimization, and IT consulting for individual clients.
+                </p>
+            </div>
+        </div>
+    </section>
 </section>
 
-<!-- Skills -->
-<section id="two" class="wrapper style3 fade-up">
+<!-- Key Skills & Certificates (Dark Purple #4932ad) -->
+<section id="skills" class="wrapper style-keyskills fade-up">
     <div class="inner">
-        <h2>Aftësi Kryesore</h2>
+        <h2>Key Skills</h2>
 
         <div class="features">
-
             <section>
                 <span class="icon solid major fa-network-wired"></span>
-                <h3>Rrjetëzim</h3>
+                <h3>Networking</h3>
                 <p>LAN/WAN, Routing, Switching, VPN, DHCP, DNS</p>
             </section>
 
             <section>
                 <span class="icon solid major fa-shield-alt"></span>
                 <h3>MikroTik & Security</h3>
-                <p>Firewall, NAT, Queues, VPN, Wireless, DNS Filtering</p>
+                <p>Firewall, NAT, Queues, VPN, Wireless, Pi-hole Filtering</p>
             </section>
 
+            <section>
+                <span class="icon solid major fa-server"></span>
+                <h3>Virtualization</h3>
+                <p>Proxmox Virtual Environment, VM Management</p>
+            </section>
+
+            <section>
+                <span class="icon solid major fa-users-cog"></span>
+                <h3>Active Directory</h3>
+                <p>GPO Management, Domain Administration</p>
+            </section>
+
+            <section>
+                <span class="icon solid major fa-desktop"></span>
+                <h3>Deploy & Remote Management</h3>
+                <p>FOG Project, MeshCentral, RDP, SSH</p>
+            </section>
+
+            <section>
+                <span class="icon solid major fa-linux"></span>
+                <h3>Linux</h3>
+                <p>NDG Linux, Debian, Ubuntu, Basic Automation</p>
+            </section>
         </div>
 
-        <h2>Certifikata</h2>
+        <h2>Certificates</h2>
         <p>
         ✔ Cisco CCNA <br>
         ✔ NDG Linux Essentials <br>
         ✔ CompTIA IT Fundamentals <br>
+        ✔ Introduction to Cybersecurity <br>
         ✔ Virtualization 2.0 <br>
         </p>
-
     </div>
 </section>
 
-<!-- Contact -->
-<section id="three" class="wrapper style1 fade-up">
-    <div class="inner">
-        <h2>Kontakt</h2>
+<!-- Contact (Dark Muted Purple #473e5c) -->
+<section id="three" class="wrapper style-contact fade-up">
+    <div class="inner split split-contact" style="display:flex; gap:50px; align-items:flex-start;">
+        
+        <!-- Form -->
+        <section style="flex:2;">
+            <h2>Contact Me</h2>
+            <p>If you would like to discuss a project or need technical support, feel free to reach out.</p>
 
-        <div class="split style1">
+            <form action="https://formsubmit.co/floriwearefiber2@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New contact from infracoretech.github.io">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://infracoretech.github.io/thank-you.html">
 
-            <section>
+                <div class="fields">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
 
-<form action="https://formsubmit.co/floriwearefiber2@gmail.com" method="POST">
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
 
-<div class="fields">
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                </div>
 
-<div class="field">
-<label>Emri</label>
-<input type="text" name="name" required>
-</div>
-
-<div class="field">
-<label>Emaili</label>
-<input type="email" name="email" required>
-</div>
-
-<div class="field">
-<label>Mesazhi</label>
-<textarea name="message" rows="4" required></textarea>
-</div>
-
-</div>
-
-<!-- SETTINGS -->
-<input type="hidden" name="_next" value="https://infracoretech.github.io/thank-you.html">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New message from Portfolio">
-
-<ul class="actions">
-<li><input type="submit" value="Dërgo"></li>
-</ul>
-
-</form>
-
-            </section>
-
-            <section>
-                <ul class="contact">
-                    <li>
-                        <h3>Email</h3>
-                        <a href="mailto:florian.zela.office@gmail.com">
-florian.zela.office@gmail.com
-</a>
-                    </li>
-                    <li>
-                        <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/florian-zela-530422234/" target="_blank">
-                        Florian Zela
-                        </a>
-                    </li>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" class="button" /></li>
                 </ul>
-            </section>
+            </form>
+        </section>
 
-        </div>
+        <!-- Contact Info (side) -->
+        <section class="contact-side" style="flex:1;">
+            <ul class="contact">
+                <li class="icon solid fa-envelope">
+                    <a href="#" id="emailLink">florian.zela.office@gmail.com</a>
+                </li>
+                <li class="icon brands fa-linkedin">
+                    <a href="https://www.linkedin.com/in/florian-zela-530422234/" target="_blank">Florian Zela</a>
+                </li>
+            </ul>
+        </section>
+
     </div>
-</section>
 
-</div>
+    <script>
+        document.getElementById("emailLink").addEventListener("click", function (e) {
+            e.preventDefault();
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                window.location.href = "mailto:florian.zela.office@gmail.com";
+            } else {
+                window.open(
+                    "https://mail.google.com/mail/?view=cm&fs=1&to=florian.zela.office@gmail.com",
+                    "_blank"
+                );
+            }
+        });
+    </script>
+</section>
 
 <!-- Footer -->
 <footer id="footer" class="wrapper style1-alt">
     <div class="inner">
         <ul class="menu">
             <li>&copy; 2026 Florian Zela</li>
-            <li>Design: HTML5 UP</li>
+            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
         </ul>
     </div>
 </footer>
@@ -178,6 +267,3 @@ florian.zela.office@gmail.com
 
 </body>
 </html>
-
-
-
